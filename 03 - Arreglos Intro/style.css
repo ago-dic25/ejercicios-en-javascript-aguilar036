@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  padding: 25px;
+  color: #333;
+}
+
+/* Contenedor de los controles de búsqueda */
+.controles {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.controles label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Estilo para el campo de texto */
+.controles input[type="text"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  flex-grow: 1;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto 'focus' para el input */
+.controles input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Estilo para los botones */
+.controles button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.controles button:active {
+  transform: scale(0.98);
+}
+
+#btn-buscar {
+  background-color: #007bff;
+}
+
+#btn-buscar:hover {
+  background-color: #0056b3;
+}
+
+#btn-limpiar {
+  background-color: #6c757d;
+}
+
+#btn-limpiar:hover {
+  background-color: #5a6268;
+}
+
+#lista-alumnos {
+  display: grid;
+  gap: 10px; 
+}
+
+/* Estilo para cada fila de alumno */
+.alumno-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.alumno-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.alumno-nombre {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.alumno-carrera {
+  font-weight: 700;
+  color: #007bff;
+  background-color: #e6f2ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
